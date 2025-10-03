@@ -1,0 +1,11 @@
+// Program to print square of numbers upto 100 using For loop.
+#include <stdio.h>
+int main(){
+    int i,n;
+    printf("Enter value for n");
+    scanf("%d",&n);
+    for(i=1; i<=n; i++){
+        printf("%d\n",i*i);
+    }
+    return 0;
+}
