@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    int i,n,m=1;
+    printf("Enter the value of n");
+    scanf("%d",&n);
+    for(i=1; i<=n; i++){
+        m *= i;
+    }
+    printf("Multiplication=%d\n",m);
+    return 0;
+}
