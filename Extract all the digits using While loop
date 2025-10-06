@@ -1,0 +1,13 @@
+// Program to extract all the digits of a given number and display them .
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter Number");
+    scanf("%d",&num);
+    while(num !=0){
+        int digit = num%10;
+        printf("%d\t",digit);
+        num=num/10;
+    }
+    return 0;
+}
