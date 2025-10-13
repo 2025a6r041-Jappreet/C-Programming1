@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+    int choice;
+    printf("Choose a Shape : ");
+    printf("1. Circle\n");
+    printf("2. Rectangle\n");
+    printf("3. Square\n");
+    printf("Enter your choice (1,2,3) to calculate the area : ");
+    scanf("%d", &choice);
+    if(choice == 1){
+        float ar, r;
+        printf("Enter Radius : ");
+        scanf("%f", &r);
+        ar = 3.14*r*r;
+        printf("Area of Circle is : %f", ar);
+    } else if(choice == 2){
+        float ar1, l, w;
+        printf("Enter Length and Width : ");
+        scanf("%f %f", &l, &w);
+        ar1 = l*w;
+        printf("Area of Rectangle : %f", ar1);
+    } else if(choice == 3){
+        float ar2, s;
+        printf("Enter Side : ");
+        scanf("%f", &s);
+        ar2 = s*s;
+        printf("Area of Square : %f", ar2);
+    } else{
+        printf("Wrong Input");
+    }
+    return 0;
+}
