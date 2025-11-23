@@ -1,0 +1,22 @@
+include <stdio.h>
+#include <string.h>
+int main() {
+char str1[100], str2[100], concat [200];
+printf("Enter first string: ");
+scanf("%s", str1);
+printf("Enter second string: ");
+scanf("%s", str2);
+printf("Length of str1 = %lu", strlen(str1));
+printf("\nLength of str2 = %lu", strlen(str2));
+strcpy(concat, str1);
+strcat(concat, str2);
+printf("\nConcatenated string = %s", concat);
+int cmp = strcmp(str1, str2);
+if (cmp == 0)
+   printf("\nBoth strings are equal\n");
+else if (cmp > 0)
+   printf("\nstri is greater than str2\n");
+else
+   printf("\nstr1 is smaller than str2\n");
+return 0;
+}
