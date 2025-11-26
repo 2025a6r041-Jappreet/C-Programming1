@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+struct Rectangle{
+    int length, width;
+};
+int getArea(struct Rectangle r){
+    return r.length * r.width;
+}
+int getPerimeter(struct Rectangle r){
+    return 2*(r.length + r.width);
+}
+int main() {
+    struct Rectangle r;
+    scanf("%d %d", &r.length, &r.width);
+    int a = getArea(r);
+    int b = getPerimeter(r);
+    printf("Area: %d\n",a);
+    printf("Perimeter: %d",b);
+    return 0;
+}
